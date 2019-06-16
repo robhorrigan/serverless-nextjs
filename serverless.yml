@@ -1,0 +1,22 @@
+service: serverless-ssr
+
+plugins:
+  - serverless-nextjs-plugin
+  - serverless-offline
+
+frameworkVersion: ">=1.21.0 <2.0.0"
+
+custom:
+  serverless-nextjs:
+    nextConfigDir: ./
+    assetsBucketName: assets.xxx.com
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: development
+  region: us-east-1
+
+package:
+  exclude:
+    - ./**

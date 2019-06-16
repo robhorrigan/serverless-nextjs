@@ -1,0 +1,42 @@
+{
+  "name": "serverless-nextjs",
+  "version": "0.0.1",
+  "description": "Serverless NextJS",
+  "scripts": {
+    "dev": "nodemon server/index.ts",
+    "lint": "tslint --project ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robhorrigan/serverless-nextjs.git"
+  },
+  "author": "Rob Horrigan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robhorrigan/serverless-nextjs/issues"
+  },
+  "homepage": "https://github.com/robhorrigan/serverless-nextjs#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.5",
+    "@types/react": "^16.8.20",
+    "@zeit/next-typescript": "^1.1.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "path-match": "^1.2.4",
+    "serverless-nextjs-plugin": "^2.0.6-alpha.0",
+    "serverless-offline": "^5.3.3",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.2",
+    "url": "^0.11.0"
+  }
+}

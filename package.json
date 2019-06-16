@@ -4,6 +4,9 @@
   "description": "Serverless NextJS",
   "scripts": {
     "dev": "nodemon server/index.ts",
+    "build": "serverless package",
+    "lambda": "serverless offline start",
+    "deploy": "serverless deploy --package .serverless",
     "lint": "tslint --project ."
   },
   "repository": {
@@ -28,6 +31,8 @@
     "nodemon": "^1.19.1",
     "path": "^0.12.7",
     "path-match": "^1.2.4",
+    "prettier": "^1.18.2",
+    "serverless": "^1.45.1",
     "serverless-nextjs-plugin": "^2.0.6-alpha.0",
     "serverless-offline": "^5.3.3",
     "ts-node": "^8.3.0",

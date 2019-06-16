@@ -18,5 +18,7 @@ provider:
   region: us-east-1
 
 package:
+  # exclude everything
+  # page handlers are automatically included by the plugin
   exclude:
     - ./**
